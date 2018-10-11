@@ -6,6 +6,7 @@
 int main(int argc, char *argv[]) {
 	
 	int i;
+	int a;
 	
 	printf("Input an integer : ");
 	scanf("%d", &i);
@@ -13,16 +14,15 @@ int main(int argc, char *argv[]) {
     
 	if (i>0)
     {
-    printf("양수 입니다.") ;
+        a=i;
     }
-	else if (i==0)
-	{    
-	printf("0 입니다.");
-	}
+	
 	else
 	{
-	printf("음수 입니다.");
+	    a=-i;
 	}
+	
+	printf("절댓값은 %i 입니다", a) ;
 	
 	return 0;
 }
